@@ -1,0 +1,41 @@
+{
+  "userInfo": {
+    "status": "developer",
+    "statusTranscript": "Разработчик",
+    "userPermissions": {
+      "editPetProperties": {
+        "petName": true,
+        "petWeight": true,
+        "petColor": true,
+        "petAge": true
+      },
+      "togglePetsGlobalProperties": true,
+      "togglePetProperties": true,
+      "addPet": true,
+      "deletePet": true,
+
+      "toggleNewRole": true,
+      "changeRole": true,
+      "toggleRoleToUser": true
+    }
+  },
+
+  "petsList": [
+    {
+      "petName": "Cat",
+      "petAge": 3
+    },
+    {
+      "petName": "Dog",
+      "petAge": 5,
+      "petWeight": 6.3
+    }
+  ],
+
+  "petProperties": [
+    ["petAge", "Возраст"],
+    ["petWeight", "Вес"],
+    ["petName", "Кличка"],
+    ["petColor", "Цвет"]
+  ]
+}

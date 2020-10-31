@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.container:hover  .list {
+  display: block;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  border: 1px solid black;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background-color: #c4c4c4;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.list {
+  display: none;
+  position: absolute;
+  width: 100%;
+  max-height: 200px;
+  overflow: auto;
+  background-color: grey;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 3px;
+}

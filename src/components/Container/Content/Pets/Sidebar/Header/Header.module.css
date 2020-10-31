@@ -1,0 +1,34 @@
+.header {
+  position: relative;
+  user-select: none;
+  border: 1px solid black;
+  border-bottom: none;
+  border-right: none;
+  width: 100%;
+  height: 35px;
+}
+
+.header:before {
+  content: '';
+  display: inline-block;
+  height: 33px;
+  width: 48px;
+  border-bottom: 1px solid black;
+}
+
+.header:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  margin-bottom: auto;
+  height: 14px;
+  width: 212px;
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+}
+
+.vector {
+  width: 38px;
+  height: 20px;
+}

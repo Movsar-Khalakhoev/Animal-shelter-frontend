@@ -1,0 +1,19 @@
+.property {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.property:last-child {
+  margin-bottom: 0;
+}
+
+.property_name {
+  margin-bottom: 4px;
+}
+
+.property_value {
+  width: 100%;
+  height: 34px;
+  padding: 0 10px;
+  outline: none;
+}

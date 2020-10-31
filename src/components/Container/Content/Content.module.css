@@ -1,0 +1,6 @@
+.content {
+  width: 1110px;
+  margin: auto;
+  height: calc(100% - 50px);
+  background-color: #fff;
+}

@@ -1,0 +1,59 @@
+.leftArrow {
+  position: absolute;
+  left: 0;
+  z-index: 80;
+  height: 22%;
+  width: 20px;
+  cursor: pointer;
+}
+
+.leftArrow:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  background-color: grey;
+  transform: rotate(-60deg);
+  top: 10px;
+  opacity: 1;
+}
+
+.leftArrow:after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  background-color: grey;
+  transform: rotate(60deg);
+  bottom: 10px;
+}
+
+.rightArrow {
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+  height: 22%;
+  width: 20px;
+  cursor: pointer;
+}
+
+.rightArrow:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  background-color: grey;
+  transform: rotate(60deg);
+  top: 10px;
+  opacity: 1;
+}
+
+.rightArrow:after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 4px;
+  background-color: grey;
+  transform: rotate(-60deg);
+  bottom: 10px;
+}

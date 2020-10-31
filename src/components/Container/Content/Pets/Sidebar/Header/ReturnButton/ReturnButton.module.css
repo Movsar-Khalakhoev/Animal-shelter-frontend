@@ -1,0 +1,53 @@
+.return {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 51px;
+  height: 22px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  border-radius: 11px;
+  background-color: grey;
+  cursor: pointer;
+}
+
+.return:hover {
+  background-color: #484848;
+}
+
+.arrow {
+  width: 37px;
+  height: 3px;
+  background-color: #000000;
+}
+
+.arrow:before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 9px;
+  bottom: 4px;
+  background-color: #000000;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.arrow:after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 9px;
+  top: 5px;
+  background-color: #000000;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
