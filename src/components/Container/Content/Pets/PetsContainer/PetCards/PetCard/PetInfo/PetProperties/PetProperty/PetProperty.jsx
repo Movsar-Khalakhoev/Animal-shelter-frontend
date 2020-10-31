@@ -3,10 +3,10 @@ import styles from "./PetProperty.module.css"
 
 const PetProperty = (props) => {
   return (
-    <p className={styles.property}>
-      {props.property}:
+    <div className={styles.property}>
+      <span className={styles.property_name}>{props.property}</span>
       <span className={styles.property_value}>{props.property_value}</span>
-    </p>
+    </div>
   )
 }
 

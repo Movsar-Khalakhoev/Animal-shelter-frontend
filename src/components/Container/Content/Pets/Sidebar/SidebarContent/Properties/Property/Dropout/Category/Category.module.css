@@ -1,0 +1,33 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #68696b;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  display: flex;
+}
+
+.label:before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #aaaaac;
+  margin-right: 7px;
+  background-color: #fff;
+}
+
+.checkbox:checked + .label:before {
+  background-color: #aaaaac;
+}

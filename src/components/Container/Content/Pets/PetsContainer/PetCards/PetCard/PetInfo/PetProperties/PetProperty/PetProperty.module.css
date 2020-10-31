@@ -1,8 +1,27 @@
 .property {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 5px;
-  margin-right: 20px;
+}
+
+.property_name {
+  font-size: 17px;
+  color: #1f4789;
+  font-weight: bold;
+  margin-right: 50px;
 }
 
 .property_value {
-  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 0.8;
+  background-color: #ebecee;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  height: 30px;
+  font-size: 15px;
+  color: #1f4789;
 }

@@ -9,6 +9,7 @@ const Container = props => {
       <Navbar />
       <Content
         state={props.state}
+        dispatch={props.dispatch}
       />
     </div>
   )

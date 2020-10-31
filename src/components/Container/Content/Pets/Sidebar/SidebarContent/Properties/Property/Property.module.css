@@ -1,11 +1,22 @@
 .property {
+  display: flex;
+  align-items: center;
   position: relative;
   width: 100%;
   margin-bottom: 14px;
 }
 
 .property:hover .categories {
-  display: block;
+  display: flex;
+}
+
+.property:before {
+  content: '>';
+  font-weight: normal;
+  font-size: 15px;
+  position: absolute;
+  color: #68696B;
+  right: 10px;
 }
 
 .property:last-child {
@@ -33,55 +44,4 @@
 .property_value::placeholder {
   font-size: 15px;
   margin-left: 11px;
-}
-
-.categories {
-  position: absolute;
-  display: none;
-  right: -50%;
-  top: 0;
-  z-index: 100;
-}
-
-.header {
-  font-style: normal;
-  font-size: 18px;
-  color: #78797b;
-  margin-bottom: 13px;
-}
-
-.dropout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 124px;
-  height: 128px;
-  padding: 6px 13px;
-  -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
-  border-radius: 9px;
-  background-color: #ebecee;
-}
-
-.categories_items {
-  list-style: none;
-  align-self: flex-start;
-}
-
-.item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  color: #68696b;
-  font-size: 15px;
-}
-
-.checkbox {
-  width: 15px;
-  height: 15px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  border: 1px solid #aaaaac;
-  margin-right: 7px;
 }

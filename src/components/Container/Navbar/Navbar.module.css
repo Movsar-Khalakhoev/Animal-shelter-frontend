@@ -1,5 +1,36 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 50px;
-  background-color: grey;
+  padding: 0 28px;
+  background-color: #C92723;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo_image {
+  margin-right: 13px;
+}
+
+.login, .feedback {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.login:hover, .feedback:hover {
+  text-decoration: underline;
+}
+
+.login {
+  margin-right: 30px;
+}
+
+.feedback {
+  margin-right: 10px;
 }

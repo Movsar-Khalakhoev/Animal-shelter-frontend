@@ -4,11 +4,11 @@ import PetProperties from "./PetProperties/PetProperties";
 
 const PetInfo = props => {
   return (
-    <div
-      className={styles.info}
-    >
+    <div className={styles.info}>
+      <p className={styles.pet_name}>Кличка</p>
       <PetProperties
         petProperties={props.petInfo}
+        allProperties={props.allProperties}
       />
     </div>
   )

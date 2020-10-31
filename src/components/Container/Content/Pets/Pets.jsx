@@ -9,8 +9,10 @@ const Pets = props => {
     <div className={styles.pets}>
       <Sidebar
         allProperties={props.state.allProperties}
+        dispatch={props.dispatch}
       />
       <PetsContainer
+        allProperties={props.state.allProperties}
         petsList={props.state.petsList}
       />
     </div>

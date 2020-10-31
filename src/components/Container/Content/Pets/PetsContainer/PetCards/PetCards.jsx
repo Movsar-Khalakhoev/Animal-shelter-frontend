@@ -6,7 +6,11 @@ const PetCards = (props) => {
   return (
     <div className={styles.cards}>
       {props.petsList.map((pet, index) => {
-        return <PetCard key={index} pet={pet}/>
+        return <PetCard
+          key={index}
+          pet={pet}
+          allProperties={props.allProperties}
+        />
       })}
     </div>
   )

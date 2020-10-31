@@ -1,5 +1,8 @@
+import {act} from "@testing-library/react";
+
 let renderUI
 
+const updateFilter = 'UPDATE-FILTER'
 const store = {
   _state: {
     "petsList": [
@@ -41,8 +44,8 @@ const store = {
         ]
       },
       {
-        "value": "petName",
-        "transcript": "Животное",
+        "value": "petAge",
+        "transcript": "Возвраст",
         "categories": [
           ["cat", "Кошка"],
           ["dog", "Cобака"],
@@ -50,33 +53,57 @@ const store = {
         ]
       },
       {
-        "value": "petName",
-        "transcript": "Животное",
+        "value": "petWeight",
+        "transcript": "Вес",
         "categories": [
           ["cat", "Кошка"],
           ["dog", "Cобака"],
-          ["all", "Любое"]
-        ]
-      },
-      {
-        "value": "petName",
-        "transcript": "Животное",
-        "categories": [
+          ["all", "Любое"],
           ["cat", "Кошка"],
           ["dog", "Cобака"],
           ["all", "Любое"]
         ]
       }
     ],
+    filter: {},
   },
   getState() {
     return this._state
   },
   subscribe(observer) {
     renderUI = observer
+  },
+  dispatch(action) {
+    switch (action.type) {
+      case updateFilter:
+        const filterName = Object.keys(action.filter)[0]
+        if (action.toggle) {
+          if (this._state.filter[filterName]) {
+            this._state.filter[filterName].push(action.filter[filterName])
+          } else {
+            this._state.filter[filterName] = [action.filter[filterName]]
+          }
+        } else {
+          delete this._state.filter[filterName]
+        }
+        getPetList(this._state.filter)
+    }
   }
+}
+
+export const updateFilterCreator = (filter, toggle) => {
+  return {
+    type: updateFilter,
+    filter,
+    toggle
+  }
+}
+
+const getPetList = (filter) => {
 }
 
 export default store
 
 window.pets = store._state.petsList
+
+window.filter = store._state.filter

@@ -7,6 +7,7 @@ const Content = props => {
     <div className={styles.content}>
       <Pets
         state={props.state}
+        dispatch={props.dispatch}
       />
     </div>
   )

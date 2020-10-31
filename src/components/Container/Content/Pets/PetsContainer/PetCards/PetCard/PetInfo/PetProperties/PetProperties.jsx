@@ -6,9 +6,15 @@ const PetProperties = (props) => {
   return (
     <div className={styles.properties}>
       {Object.keys(props.petProperties).map((property, index) => {
+        let property_transcript
+        props.allProperties.forEach(prop => {
+          if (prop.value === property) {
+            property_transcript = prop.transcript
+          }
+        })
         return <PetProperty
                 key={index}
-                property={property}
+                property={property_transcript}
                 property_value={props.petProperties[property]}
               />
       })}

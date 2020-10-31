@@ -19,6 +19,7 @@ const PetCard = (props) => {
       />
       <PetInfo
         petInfo={props.pet.properties}
+        allProperties={props.allProperties}
       />
     </NavLink>
   )

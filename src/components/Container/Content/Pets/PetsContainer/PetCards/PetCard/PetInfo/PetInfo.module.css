@@ -1,4 +1,11 @@
 .info {
   height: 100%;
   flex-grow: 1;
+  padding-top: 10px;
+}
+
+.pet_name {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1f4789;
 }

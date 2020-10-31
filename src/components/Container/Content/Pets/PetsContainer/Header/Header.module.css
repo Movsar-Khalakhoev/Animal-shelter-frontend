@@ -1,39 +1,9 @@
 .header {
-  user-select: none;
-  position: relative;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  border: 1px solid black;
-  border-bottom: none;
-  border-left: none;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 35px;
-}
-
-.header:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '';
-  display: inline-block;
-  height: 14px;
-  width: 704px;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-}
-
-.header:after {
-  content: '';
-  display: inline-block;
-  margin-bottom: auto;
-  height: 33px;
-  width: 48px;
-  border-bottom: 1px solid black;;
-}
-
-.vector {
-  transform: scale(1, -1);
-  width: 38px;
-  height: 20px;
+  height: 75px;
+  border-bottom: 1px solid #ebecee;
+  margin-bottom: 5px;
 }

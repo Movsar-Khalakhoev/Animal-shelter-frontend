@@ -7,6 +7,7 @@ function App(props) {
     <div className={styles.app_wrapper}>
       <Container
         state={props.state}
+        dispatch={props.dispatch}
       />
     </div>
   );

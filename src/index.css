@@ -32,15 +32,16 @@ code {
 
 ::-webkit-scrollbar-track {
   display: flex;
-  background-color: #ecedee;
+  background-color: #ffffff;
   width: 5px;
   padding: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 0;
-  border-radius: 0;
-  background-color: #434343;
+  width: 8px;
+  background-color: #EBECEE;
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
@@ -49,11 +50,14 @@ code {
 
 ::-webkit-resizer{
   background-repeat:no-repeat;
-  width:4px;
+  width:8px;
   height: 0;
   margin-left: 3px;
 }
 
 ::-webkit-scrollbar{
-  width: 4px;
+  width: 8px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
