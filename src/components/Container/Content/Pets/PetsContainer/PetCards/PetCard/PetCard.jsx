@@ -14,7 +14,13 @@ const PetCard = (props) => {
       activeClassName={styles.active}
     >
       <PetImages
-        images={[]}
+        images={[
+          'https://clck.ru/RhENm',
+          'https://clck.ru/RhEP6',
+          'https://clck.ru/RhEPe',
+          'https://clck.ru/RhEPz',
+          'https://clck.ru/RhEQP'
+        ]}
       />
       <PetInfo
         petInfo={props.pet}

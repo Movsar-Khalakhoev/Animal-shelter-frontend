@@ -8,7 +8,8 @@ const PetProperties = (props) => {
     'id',
     'idcard_registration_animal',
     'shelter_address_animal',
-    'name_animal'
+    'name_animal',
+    'author'
   ]
 
   unwantedFields.forEach(field => {
@@ -16,7 +17,7 @@ const PetProperties = (props) => {
   })
   return (
     <div className={styles.properties}>
-      {Object.keys(props.petProperties).map((property, index) => {
+      {Object.keys(properties).map((property, index) => {
         let property_transcript
         props.allProperties.forEach(prop => {
           if (prop.value === property) {
@@ -26,7 +27,7 @@ const PetProperties = (props) => {
         return <PetProperty
                 key={index}
                 property={property_transcript}
-                property_value={props.petProperties[property]}
+                property_value={properties[property]}
               />
       })}
     </div>

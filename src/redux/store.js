@@ -75,25 +75,6 @@ const store = {
   }
 }
 
-// const setStateCreator = (state) => {
-//   return {
-//     type: setState,
-//     state
-//   }
-// }
-
-// export const getPetList = async (dispatch) => {
-//   await fetch(`http://${document.domain}:8000/api/animals/?format=json`)
-//     .then(async (data) => {
-//       await data.json()
-//         .then((data) => {
-//           dispatch(setStateCreator(data))
-//         })
-//     })
-// }
-
-// console.log(store._state)
-
 export default store
 
 

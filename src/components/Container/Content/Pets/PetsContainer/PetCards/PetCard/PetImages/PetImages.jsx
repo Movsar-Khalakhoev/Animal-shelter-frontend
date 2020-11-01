@@ -7,7 +7,6 @@ import SliderArrow from "./SliderArrows/SliderArrow";
 import Slide from "./Slide/Slide";
 
 const PetImages = (props) => {
-
   const settings = {
     adaptiveHeight: true,
     dots: true,

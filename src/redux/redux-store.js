@@ -14,7 +14,6 @@ let store = createStore(reducers);
 
 axios.get(`http://${document.domain}:8000/api/animals/?format=json`)
   .then(response => {
-    console.log(response)
     store.dispatch(petListCreator(response.data.data))
   })
 

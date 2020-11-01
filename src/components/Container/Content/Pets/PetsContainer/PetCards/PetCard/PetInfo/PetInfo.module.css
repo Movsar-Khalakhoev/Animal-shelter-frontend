@@ -1,12 +1,37 @@
 .info {
+  position: relative;
   height: 100%;
   flex-grow: 1;
   padding-top: 10px;
-  overflow-y: auto;
 }
 
 .pet_name {
   font-size: 28px;
   font-weight: bold;
   color: #1f4789;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 92px;
+  height: 26px;
+  background-color: #c92723;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: #8a1b17;
 }
