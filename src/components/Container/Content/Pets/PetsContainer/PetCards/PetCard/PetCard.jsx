@@ -5,7 +5,6 @@ import PetInfo from "./PetInfo/PetInfo";
 import {NavLink} from "react-router-dom";
 
 const PetCard = (props) => {
-
   const link = `/pet/${props.pet.id}`
   return (
     <NavLink
@@ -15,10 +14,10 @@ const PetCard = (props) => {
       activeClassName={styles.active}
     >
       <PetImages
-        images={props.pet.images}
+        images={[]}
       />
       <PetInfo
-        petInfo={props.pet.properties}
+        petInfo={props.pet}
         allProperties={props.allProperties}
       />
     </NavLink>

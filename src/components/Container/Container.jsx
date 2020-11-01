@@ -7,10 +7,7 @@ const Container = props => {
   return (
     <div className={styles.container}>
       <Navbar />
-      <Content
-        state={props.state}
-        dispatch={props.dispatch}
-      />
+      <Content />
     </div>
   )
 }

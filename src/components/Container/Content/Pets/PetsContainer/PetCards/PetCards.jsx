@@ -1,7 +1,7 @@
 import React from "react"
 import styles from "./PetCards.module.css"
 import PetCard from "./PetCard/PetCard";
-
+import {connect} from "react-redux";
 const PetCards = (props) => {
   return (
     <div className={styles.cards}>
@@ -16,4 +16,19 @@ const PetCards = (props) => {
   )
 }
 
-export default PetCards
+const mapStateToProps = (state) => {
+  return {
+    allProperties: state.allProperties,
+    petsList: state.petsList
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    dispatch
+  }
+}
+
+const PetCardsContainer = connect(mapStateToProps, mapDispatchToProps)(PetCards)
+
+export default PetCardsContainer

@@ -29,7 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Container/Content/Pets/Sidebar" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
@@ -37,6 +37,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Programs\OSPanel\domains\pet-shelter\src\components\Container\Content\Pets\Sidebar" />
+      <recent name="D:\Programs\OSPanel\domains\pet-shelter\src\components\Container\Content\Pets\PetsContainer\PetCards" />
+      <recent name="D:\Programs\OSPanel\domains\pet-shelter\src\components\Container\Content\Pets\Sidebar\SidebarContent\Properties\Property\Dropout\Category" />
       <recent name="D:\Programs\OSPanel\domains\pet-shelter\src" />
     </key>
   </component>
@@ -48,7 +51,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604134098023</updated>
-      <workItem from="1604134099083" duration="21041000" />
+      <workItem from="1604134099083" duration="56512000" />
     </task>
     <servers />
   </component>
@@ -56,13 +59,29 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604134980973">
+    <state x="309" y="42" key="#Inspections" timestamp="1604191823672">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604134980973" />
+    <state x="309" y="42" key="#Inspections/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604191823672" />
+    <state x="426" y="166" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604193930232">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="426" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604193930232" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604199201397">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604199201397" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1604174743201">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604174743201" />
     <state x="184" y="9" key="SettingsEditor" timestamp="1604135227152">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="9" key="SettingsEditor/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604135227152" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604200470104">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728/1366.0.1920.1040@0.0.1366.728" timestamp="1604200470104" />
   </component>
 </project>

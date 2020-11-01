@@ -1,15 +1,13 @@
 import React from "react"
 import styles from "./Category.module.css"
-import {updateFilterCreator} from "../../../../../../../../../../redux/state";
 
 const Category = (props) => {
-
   const updateFilter = (event) => {
     const toggle = event.target.checked
     const filter = {
       [props.property_value]: event.target.dataset.category
     }
-    props.dispatch(updateFilterCreator(filter, toggle))
+    props.updateFilter(filter, toggle)
   }
   return (
     <li className={styles.item}>
@@ -25,9 +23,6 @@ const Category = (props) => {
         className={styles.label}
       >{props.category[1]}
       </label>
-      {/*<p*/}
-      {/*  className={styles.category_text}*/}
-      {/*>{props.category[1]}</p>*/}
     </li>
   )
 }

@@ -1,9 +1,8 @@
 import React from "react"
 import styles from "./Dropout.module.css"
-import Category from "./Category/Category";
+import CategoryContainer from "./Category/CategoryContainer";
 
 const Dropout = (props) => {
-  console.log(props)
   return (
     <div className={`${props.categoriesClass} ${styles.categories}`}>
       <div className={styles.dropout}>
@@ -12,7 +11,7 @@ const Dropout = (props) => {
           {
             props.property.categories.map(
               (category, index) =>
-                <Category
+                <CategoryContainer
                   property_value={props.property.value}
                   category={category}
                   key={index}

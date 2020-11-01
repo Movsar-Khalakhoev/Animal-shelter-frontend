@@ -1,7 +1,6 @@
 import React from "react"
 import styles from "./Property.module.css"
 import Dropout from "./Dropout/Dropout";
-import Sidebar from "../../../Sidebar";
 
 const Property = (props) => {
   return (

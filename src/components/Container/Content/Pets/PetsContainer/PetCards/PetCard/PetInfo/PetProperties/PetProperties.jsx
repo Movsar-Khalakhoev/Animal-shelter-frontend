@@ -3,6 +3,17 @@ import styles from "./PetProperties.module.css"
 import PetProperty from "./PetProperty/PetProperty";
 
 const PetProperties = (props) => {
+  const properties = {...props.petProperties}
+  const unwantedFields = [
+    'id',
+    'idcard_registration_animal',
+    'shelter_address_animal',
+    'name_animal'
+  ]
+
+  unwantedFields.forEach(field => {
+    delete properties[field]
+  })
   return (
     <div className={styles.properties}>
       {Object.keys(props.petProperties).map((property, index) => {

@@ -1,8 +1,7 @@
-import {act} from "@testing-library/react";
+import filterReducer from "./filterReducer";
 
 let renderUI
 
-const updateFilter = 'UPDATE-FILTER'
 const store = {
   _state: {
     "petsList": [
@@ -22,14 +21,12 @@ const store = {
       {
         id: 10,
         images: [
-          'https://clck.ru/RdnFW',
-          'https://clck.ru/RdnGw',
-          'https://clck.ru/RdnHc'
+          'https://clck.ru/Rh6K2',
         ],
         properties: {
         "petName": "Tiger",
         "petAge": 5,
-        "petWeight": 114
+        "petWeight": 10
         }
       }
     ],
@@ -45,7 +42,7 @@ const store = {
       },
       {
         "value": "petAge",
-        "transcript": "Возвраст",
+        "transcript": "Возраст",
         "categories": [
           ["cat", "Кошка"],
           ["dog", "Cобака"],
@@ -74,36 +71,30 @@ const store = {
     renderUI = observer
   },
   dispatch(action) {
-    switch (action.type) {
-      case updateFilter:
-        const filterName = Object.keys(action.filter)[0]
-        if (action.toggle) {
-          if (this._state.filter[filterName]) {
-            this._state.filter[filterName].push(action.filter[filterName])
-          } else {
-            this._state.filter[filterName] = [action.filter[filterName]]
-          }
-        } else {
-          delete this._state.filter[filterName]
-        }
-        getPetList(this._state.filter)
-    }
+    this._state.filter = filterReducer(this._state.filter, action)
   }
 }
 
-export const updateFilterCreator = (filter, toggle) => {
-  return {
-    type: updateFilter,
-    filter,
-    toggle
-  }
-}
+// const setStateCreator = (state) => {
+//   return {
+//     type: setState,
+//     state
+//   }
+// }
 
-const getPetList = (filter) => {
-}
+// export const getPetList = async (dispatch) => {
+//   await fetch(`http://${document.domain}:8000/api/animals/?format=json`)
+//     .then(async (data) => {
+//       await data.json()
+//         .then((data) => {
+//           dispatch(setStateCreator(data))
+//         })
+//     })
+// }
+
+// console.log(store._state)
 
 export default store
 
-window.pets = store._state.petsList
 
 window.filter = store._state.filter

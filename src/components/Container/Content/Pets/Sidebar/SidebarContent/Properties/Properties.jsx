@@ -1,7 +1,6 @@
 import React from "react"
 import styles from "./Properties.module.css"
 import Property from "./Property/Property";
-import Sidebar from "../../Sidebar";
 
 const Properties = (props) => {
   return (
